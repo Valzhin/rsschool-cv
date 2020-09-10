@@ -24,7 +24,7 @@ I'm interested in working as a front-end developer, because this profession will
 
 ## Code examples ##
 
-```javascript
+```javascript.html
     <!DOCTYPE html>
     <html>
     <head>
@@ -232,5 +232,5 @@ At the moment I'm taking courses on front-end from RS-school.
 
 ## English ##
 
-English is at == A2 == level, but I try to improve my level with the help of online courses.
+English is at **A2** level, but I try to improve my level with the help of online courses.
 
