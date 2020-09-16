@@ -1,0 +1,215 @@
+body {
+    width: 1024px;
+    margin: 0 auto;
+}
+main {
+  float: left;
+  background: rgb(234, 221, 238);
+}
+article {
+  padding: 1px;
+  margin: 0px;
+}
+header {
+    padding: 10px;
+    padding-bottom: 30px;
+    background: rgb(141, 68, 111);
+    text-align: center;
+    font-size: 30px;
+    color: #efebeb;
+    text-shadow: -1px 0 0 #101010, 1px 1px 0 #1b1a1a, 2px -1px 0 #1d1d1d, 3px 0 0 #1d1c1c;
+}
+header img {
+    width: 300px;
+    margin: 50px auto 0;
+    padding: 5px;
+    background: linear-gradient(#750a3c 50%, #5b0e72 50%);
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+.menu {
+    padding: 15px;
+    background: rgb(240, 231, 236);
+    width: 200px;
+    box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.1);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-right: 0px;
+    float: left;
+    height: 438px;
+}
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(36, 6, 24, 0.2);
+}
+.menu li {
+  margin: 10px 0 0 0px;
+  padding-bottom: 10px;
+}
+.menu a {
+    text-decoration: none;
+    display: block;  
+    font-size: 18px;
+    color: black;
+    padding: 10px 5px;
+    position: relative;
+    transition: 0.2s linear;
+  }
+.menu a:after {
+    font-family: FontAwesome;
+    position: absolute;
+    right: 5px;
+    color: white;
+    transition: 0.2s linear;
+  }
+.menu a:hover {
+    background: #ac70aa;
+    color: white;
+  } 
+.summary {
+    font-size: 16px;
+    color: black;
+    transition: 0.2s linear;
+    background: rgb(243, 202, 241);
+    width: 761px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    float: left;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid rgba(36, 6, 24, 0.2);
+  }
+ h2 {
+  font-family: Kondolar-Regular, Georgia, serif;
+  text-shadow: 1px 1px 0 #f1e9e9, 2px 2px 0 #4e4a4a;
+}
+.skills {
+  font-size: 16px;
+    color: black;
+    transition: 0.2s linear;
+    background: rgb(238, 217, 229);
+    width: 761px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    float: left;
+    padding: 15px;
+    border: 1px solid rgba(36, 6, 24, 0.2);
+}
+.list {
+  padding-left:50px;
+  list-style: none;
+}
+.list li{
+  padding:6px;
+}
+.list li:before {
+  padding-right:10px;
+  font-weight: bold;
+  color: #C0C0C0;
+  content: "\2714";
+  transition-duration: 0.5s;
+}
+.list li:hover:before {
+  color: #337AB7;
+  content: "\2714";
+}   
+.skills h2 {
+  text-align: center;
+}
+.code h2 {
+  position: relative;
+  left: 539px;
+  padding-top: 15px;
+}
+.code {
+  clear: both;
+}
+pre {
+  padding: 0px;
+  margin: 0px;
+}
+.experience {
+  font-size: 16px;
+  color: black;
+  transition: 0.2s linear;
+  background:  rgb(241, 199, 220);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 10px 15px;
+  text-align: center;
+  border: 1px solid rgba(36, 6, 24, 0.2);
+}
+.experience h2 {
+  position: relative;
+  left: 83px;
+  bottom: 10px;
+}
+.education {
+  font-size: 16px;
+  color: black;
+  transition: 0.2s linear;
+  background:  rgb(243, 209, 243);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 10px 15px;
+  text-align: center;
+  border: 1px solid rgba(36, 6, 24, 0.2);
+}
+.education h2 {
+  position: relative;
+  left: 83px;
+  bottom: 10px;
+}
+.english {
+  font-size: 16px;
+  color: black;
+  transition: 0.2s linear;
+  background:  rgb(245, 220, 232);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 10px 15px;
+  text-align: center;
+  border: 1px solid rgba(36, 6, 24, 0.2);
+}
+.english h2 {
+  position: relative;
+  left: 83px;
+  bottom: 10px;
+}
+footer {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  transition: 0.2s linear;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 10px 15px;
+  border: 1px solid rgba(36, 6, 24, 0.2);
+  background: rgb(65, 22, 47);
+  clear: both;
+}
+footer ul { 
+  list-style:none; 
+  text-align:center; 
+  border:1px solid rgba(253, 253, 253, 0.2); 
+  padding:10px 0; 
+}
+footer ul li { 
+  display:inline;  
+  padding:0 10px; 
+  letter-spacing:10px;
+ }
+footer ul li a {
+   text-decoration:none; 
+   color:rgb(248, 248, 248);
+   padding: 5px; 
+  }
+footer ul li a:hover { 
+  color: white;
+  transition: 0.2s linear;
+  background: #e99fe5;
+} 
+footer h3 {
+  padding: 10px;
+  font-size: 20px;
+  color: #efebeb;
+  text-shadow: -1px 0 0 #101010, 1px 1px 0 #1b1a1a, 2px -1px 0 #1d1d1d, 3px 0 0 #1d1c1c;
+}
