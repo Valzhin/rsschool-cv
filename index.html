@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+ <header class="header">
+   <h1>Valzhyna Lialkova</h1>
+   <img src="cotte.jpg" alt="picture">
+  </header>
+ <main>
+  <nav class="menu">
+        <ul>
+            <li><a href="#Summary">Summary</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Code_examples">Code examples</a></li>
+            <li><a href="#Experience">Experience</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#English">English</a></li>
+            <li><a href="#Contact_Info">Contact Info</a></li>
+          </ul>
+     </nav>
+     <article>
+        <section class="summary">
+            <h2><a id="Summary">Summary</a></h2>
+            <p>I'm interested in working as a front-end developer, because this profession will allow me to realize my desire for new knowledge, constant development and pumping of my brain. It is important for me that the work isn't simple and monotonous and it allows me to realize all my ambitions, and my diligence and perfectionism are adequately rewarded.
+            </p>
+        </section>
+        <section class="skills">
+            <h2><a id="Skills">Skills</a></h2>
+            <ul class="list">
+                <li>HTML</li>
+                <li>CSS</li>                    
+                <li>JavaScript</li>                    
+                <li>some Git</li>                   
+                <li>some jQuery</li>
+            </ul>
+        </section>
+        <section class="code">
+            <h2><a id="Code_examples">Code examples</a></h2></section>
+            <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(51, 51, 51); color: rgb(255, 255, 255);"><span class="xml"><span class="hljs-meta" style="color: rgb(252, 155, 155);">&lt;!DOCTYPE html&gt;</span>
+                <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">html</span>&gt;</span>
+                <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">head</span>&gt;</span>
+                    <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"UTF-8"</span>&gt;</span>
+                    <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">title</span>&gt;</span>Snake<span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">title</span>&gt;</span>
+                <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">head</span>&gt;</span>
+                <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">body</span>&gt;</span>
+                <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">canvas</span> <span class="hljs-attr">id</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"canvas"</span> <span class="hljs-attr">width</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"600"</span> <span class="hljs-attr">height</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"600"</span>&gt;</span><span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">canvas</span>&gt;</span>
+                <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">script</span>&gt;</span>
+            
+                <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">script</span>&gt;</span><span class="javascript">
+                
+                  <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> canvas = <span class="hljs-built_in" style="color: rgb(255, 255, 170);">document</span>.getElementById(<span class="hljs-string" style="color: rgb(162, 252, 162);">"canvas"</span>);
+                  <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> ctx = canvas.getContext(<span class="hljs-string" style="color: rgb(162, 252, 162);">"2d"</span>);
+              
+                  <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> width = canvas.width;
+                  <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> height = canvas.height;
+              
+                  <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> blockSize = <span class="hljs-number" style="color: rgb(211, 99, 99);">10</span>;
+                  <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> widthInBlocks = width / blockSize;
+                  <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> heightInBlocks = height / blockSize;
+              
+                  <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> score = <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>;
+              
+                  <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> drawBorder = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">function</span> (<span class="hljs-params"></span>) </span>{
+                    ctx.fillStyle = <span class="hljs-string" style="color: rgb(162, 252, 162);">"Gray"</span>;
+                      ctx.fillRect(<span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>, <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>, width, blockSize);
+                      ctx.fillRect(<span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>, height - blockSize, width, blockSize);
+                      ctx.fillRect(<span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>, <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>, blockSize, height);
+                      ctx.fillRect(width - blockSize, <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>, blockSize, height);
+                  };
+                
+                  <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> drawScore = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">function</span> (<span class="hljs-params"></span>) </span>{
+                    ctx.font = <span class="hljs-string" style="color: rgb(162, 252, 162);">"20px Courier"</span>;
+                      ctx.fillStyle = <span class="hljs-string" style="color: rgb(162, 252, 162);">"Black"</span>;
+                      ctx.textAlign = <span class="hljs-string" style="color: rgb(162, 252, 162);">"left"</span>;
+                      ctx.textBaseline = <span class="hljs-string" style="color: rgb(162, 252, 162);">"top"</span>;
+                      ctx.fillText(<span class="hljs-string" style="color: rgb(162, 252, 162);">"Счёт: "</span> + score, blockSize, blockSize);
+                  };
+              
+                  <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> gameOver = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">function</span> (<span class="hljs-params"></span>) </span>{
+                    clearInterval(intervald);
+                      ctx.font = <span class="hljs-string" style="color: rgb(162, 252, 162);">"60px Courier"</span>;
+                      ctx.fillStyle = <span class="hljs-string" style="color: rgb(162, 252, 162);">"Black"</span>;
+                      ctx.textAlign = <span class="hljs-string" style="color: rgb(162, 252, 162);">"center"</span>;
+                      ctx.textBaseline = <span class="hljs-string" style="color: rgb(162, 252, 162);">"middle"</span>;
+                      ctx.fillText(<span class="hljs-string" style="color: rgb(162, 252, 162);">"Конец игры"</span>, width / <span class="hljs-number" style="color: rgb(211, 99, 99);">2</span>, height / <span class="hljs-number" style="color: rgb(211, 99, 99);">2</span>);
+                  };
+              
+                  <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> circle = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">function</span> (<span class="hljs-params">x, y, radius, fillCircle</span>) </span>{
+                    ctx.beginPath();
+                      ctx.arc(x, y, radius, <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>, <span class="hljs-built_in" style="color: rgb(255, 255, 170);">Math</span>.PI * <span class="hljs-number" style="color: rgb(211, 99, 99);">2</span>, <span class="hljs-literal" style="color: rgb(252, 194, 140);">false</span>);
+                     <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (fillCircle) {
+                      ctx.fill();
+                     } <span class="hljs-keyword" style="color: rgb(252, 194, 140);">else</span> {
+                      ctx.stroke();
+                     }
+                  };
+              
+                  <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> Block = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">function</span> (<span class="hljs-params">col, row</span>) </span>{
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.col = col;
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.row = row;
+                  };
+              
+                  Block.prototype.drawSquare = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">function</span> (<span class="hljs-params">color</span>) </span>{
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> x = <span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.col * blockSize;
+                      <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> y = <span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.row * blockSize;
+                      ctx.fillStyle = color;
+                      ctx.fillRect(x, y, blockSize, blockSize);
+                  };
+              
+                  Block.prototype.drawCircle = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">function</span> (<span class="hljs-params">color</span>) </span>{
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> centerX = <span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.col * blockSize + blockSize / <span class="hljs-number" style="color: rgb(211, 99, 99);">2</span>;
+                      <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> centerY = <span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.row * blockSize + blockSize / <span class="hljs-number" style="color: rgb(211, 99, 99);">2</span>;
+                    ctx.fillStyle = color;
+                      circle(centerX, centerY, blockSize / <span class="hljs-number" style="color: rgb(211, 99, 99);">2</span>, <span class="hljs-literal" style="color: rgb(252, 194, 140);">true</span>);
+                  };
+              
+                  Block.prototype.equal = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">function</span> (<span class="hljs-params">otherBlock</span>) </span>{
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">return</span> <span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.col === otherBlock.col &amp;&amp; <span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.row === otherBlock.row;
+                  };
+              
+                  <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> Snake = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">function</span> (<span class="hljs-params"></span>) </span>{
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.segments = [
+                      <span class="hljs-keyword" style="color: rgb(252, 194, 140);">new</span> Block(<span class="hljs-number" style="color: rgb(211, 99, 99);">7</span>, <span class="hljs-number" style="color: rgb(211, 99, 99);">5</span>),
+                      <span class="hljs-keyword" style="color: rgb(252, 194, 140);">new</span> Block(<span class="hljs-number" style="color: rgb(211, 99, 99);">6</span>, <span class="hljs-number" style="color: rgb(211, 99, 99);">5</span>),
+                      <span class="hljs-keyword" style="color: rgb(252, 194, 140);">new</span> Block(<span class="hljs-number" style="color: rgb(211, 99, 99);">5</span>, <span class="hljs-number" style="color: rgb(211, 99, 99);">5</span>)
+                    ];
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.direction = <span class="hljs-string" style="color: rgb(162, 252, 162);">"right"</span>;
+                      <span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.nextDirection = <span class="hljs-string" style="color: rgb(162, 252, 162);">"right"</span>;
+                  };
+              
+                  Snake.prototype.draw = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">function</span> (<span class="hljs-params"></span>) </span>{
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">for</span> (<span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> i = <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>; i &lt; <span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.segments.length; i++) {
+                      <span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.segments[i].drawSquare(<span class="hljs-string" style="color: rgb(162, 252, 162);">"Blue"</span>);
+                    }
+                  };
+                  Snake.prototype.move = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">function</span> (<span class="hljs-params"></span>) </span>{
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> head = <span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.segments[<span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>];
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> newHead;
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.direction = <span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.nextDirection;
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (<span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.direction === <span class="hljs-string" style="color: rgb(162, 252, 162);">"right"</span>) {
+                      newHead = <span class="hljs-keyword" style="color: rgb(252, 194, 140);">new</span> Block(head.col + <span class="hljs-number" style="color: rgb(211, 99, 99);">1</span>, head.row);
+                    } <span class="hljs-keyword" style="color: rgb(252, 194, 140);">else</span> <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (<span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.direction === <span class="hljs-string" style="color: rgb(162, 252, 162);">"down"</span>) {
+                      newHead = <span class="hljs-keyword" style="color: rgb(252, 194, 140);">new</span> Block(head.col, head.row + <span class="hljs-number" style="color: rgb(211, 99, 99);">1</span>);
+                    } <span class="hljs-keyword" style="color: rgb(252, 194, 140);">else</span> <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (<span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.direction === <span class="hljs-string" style="color: rgb(162, 252, 162);">"left"</span>) {
+                      newHead = <span class="hljs-keyword" style="color: rgb(252, 194, 140);">new</span> Block(head.col - <span class="hljs-number" style="color: rgb(211, 99, 99);">1</span>, head.row);
+                    } <span class="hljs-keyword" style="color: rgb(252, 194, 140);">else</span> <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (<span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.direction === <span class="hljs-string" style="color: rgb(162, 252, 162);">"up"</span>) {
+                      newHead = <span class="hljs-keyword" style="color: rgb(252, 194, 140);">new</span> Block(head.col, head.row - <span class="hljs-number" style="color: rgb(211, 99, 99);">1</span>);
+                    }
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (<span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.checkCollision(newHead)) {
+                      gameOver();
+                      <span class="hljs-keyword" style="color: rgb(252, 194, 140);">return</span>;
+                    }
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.segments.unshift(newHead);
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (newHead.equal(apple.position)) {
+                      score++;
+                      apple.move();
+                    } <span class="hljs-keyword" style="color: rgb(252, 194, 140);">else</span> {
+                      <span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.segments.pop();
+                    }
+                  };
+                  Snake.prototype.checkCollision = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">function</span> (<span class="hljs-params">head</span>) </span>{
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> leftCollision = (head.col === <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>);
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> topCollision = (head.row === <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>);
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> rightCollision = (head.col === widthInBlocks - <span class="hljs-number" style="color: rgb(211, 99, 99);">1</span>);
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> bottomCollision = (head.row === heightInBlocks <span class="hljs-number" style="color: rgb(211, 99, 99);">-1</span>);
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> wallCollision = leftCollision || topCollision || rightCollision || bottomCollision;
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> selfCollision = <span class="hljs-literal" style="color: rgb(252, 194, 140);">false</span>;
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">for</span> (<span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> i = <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>; i &lt; <span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.segments.length; i++) {
+                      <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (head.equal(<span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.segments[i])) {
+                        selfCollision = <span class="hljs-literal" style="color: rgb(252, 194, 140);">true</span>;
+                      }
+                    }
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">return</span> wallCollision || selfCollision;
+                  };
+              
+                
+                  Snake.prototype.setDirection = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">function</span> (<span class="hljs-params">newDirection</span>) </span>{
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (<span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.direction === <span class="hljs-string" style="color: rgb(162, 252, 162);">"up"</span> &amp;&amp; newDirection === <span class="hljs-string" style="color: rgb(162, 252, 162);">"down"</span>) {
+                      <span class="hljs-keyword" style="color: rgb(252, 194, 140);">return</span>;
+                    } <span class="hljs-keyword" style="color: rgb(252, 194, 140);">else</span> <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (<span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.direction === <span class="hljs-string" style="color: rgb(162, 252, 162);">"right"</span> &amp;&amp; newDirection === <span class="hljs-string" style="color: rgb(162, 252, 162);">"left"</span>) {
+                      <span class="hljs-keyword" style="color: rgb(252, 194, 140);">return</span>;
+                    } <span class="hljs-keyword" style="color: rgb(252, 194, 140);">else</span> <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (<span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.direction === <span class="hljs-string" style="color: rgb(162, 252, 162);">"down"</span> &amp;&amp; newDirection === <span class="hljs-string" style="color: rgb(162, 252, 162);">"up"</span>) {
+                      <span class="hljs-keyword" style="color: rgb(252, 194, 140);">return</span>;
+                    } <span class="hljs-keyword" style="color: rgb(252, 194, 140);">else</span> <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (<span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.direction === <span class="hljs-string" style="color: rgb(162, 252, 162);">"left"</span> &amp;&amp; newDirection === <span class="hljs-string" style="color: rgb(162, 252, 162);">"right"</span>) {
+                      <span class="hljs-keyword" style="color: rgb(252, 194, 140);">return</span>;
+                    }
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.nextDirection = newDirection;
+                  };
+              
+                  <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> Apple = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">function</span> (<span class="hljs-params"></span>) </span>{
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.position = <span class="hljs-keyword" style="color: rgb(252, 194, 140);">new</span> Block(<span class="hljs-number" style="color: rgb(211, 99, 99);">10</span>, <span class="hljs-number" style="color: rgb(211, 99, 99);">10</span>);
+                  };
+              
+                  Apple.prototype.draw = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">function</span>(<span class="hljs-params"></span>) </span>{
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.position.drawCircle(<span class="hljs-string" style="color: rgb(162, 252, 162);">"LimeGreen"</span>);
+                  };
+              
+                  Apple.prototype.move = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">function</span> (<span class="hljs-params"></span>) </span>{
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> randomCol = <span class="hljs-built_in" style="color: rgb(255, 255, 170);">Math</span>.floor(<span class="hljs-built_in" style="color: rgb(255, 255, 170);">Math</span>.random() * (heightInBlocks - <span class="hljs-number" style="color: rgb(211, 99, 99);">2</span>)) + <span class="hljs-number" style="color: rgb(211, 99, 99);">1</span>;
+                      <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> randomRow = <span class="hljs-built_in" style="color: rgb(255, 255, 170);">Math</span>.floor(<span class="hljs-built_in" style="color: rgb(255, 255, 170);">Math</span>.random() * (heightInBlocks - <span class="hljs-number" style="color: rgb(211, 99, 99);">2</span>)) + <span class="hljs-number" style="color: rgb(211, 99, 99);">1</span>;
+                      <span class="hljs-keyword" style="color: rgb(252, 194, 140);">this</span>.position = <span class="hljs-keyword" style="color: rgb(252, 194, 140);">new</span> Block(randomCol, randomRow);
+                  };
+              
+                  <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> snake = <span class="hljs-keyword" style="color: rgb(252, 194, 140);">new</span> Snake();
+                  <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> apple = <span class="hljs-keyword" style="color: rgb(252, 194, 140);">new</span> Apple();
+              
+                  <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> intervald = setInterval(<span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">function</span> (<span class="hljs-params"></span>) </span>{
+                    ctx.clearRect(<span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>, <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>, width, height);
+                      drawScore();
+                      snake.move();
+                      snake.draw();
+                      apple.draw();
+                      drawBorder();
+                  }, <span class="hljs-number" style="color: rgb(211, 99, 99);">100</span>);
+              
+                   <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> direction = {
+                     <span class="hljs-number" style="color: rgb(211, 99, 99);">37</span>: <span class="hljs-string" style="color: rgb(162, 252, 162);">"left"</span>,
+                       <span class="hljs-number" style="color: rgb(211, 99, 99);">38</span>: <span class="hljs-string" style="color: rgb(162, 252, 162);">"up"</span>,
+                       <span class="hljs-number" style="color: rgb(211, 99, 99);">39</span>: <span class="hljs-string" style="color: rgb(162, 252, 162);">"right"</span>,
+                      <span class="hljs-number" style="color: rgb(211, 99, 99);">40</span>: <span class="hljs-string" style="color: rgb(162, 252, 162);">"down"</span>
+                  };
+              
+                  $(<span class="hljs-string" style="color: rgb(162, 252, 162);">"body"</span>).keydown(<span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">function</span> (<span class="hljs-params">event</span>) </span>{
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">var</span> newDirection = direction[event.keyCode];
+                    <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span> (newDirection !== <span class="hljs-literal" style="color: rgb(252, 194, 140);">undefined</span>) {
+                      snake.setDirection(newDirection);
+                    }
+                  });
+            
+                </span><span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">script</span>&gt;</span>	
+                <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">body</span>&gt;</span>
+                <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">html</span>&gt;</span></span></pre>
+        <section class="experience">
+            <h2><a id="Experience">Experience</a></h2>
+            <p>So far, my experience has been completing tasks in HTML, CSS, and JavaScript in various free online courses and from tutorials, since I started learning front-end three months ago.</p>
+        </section>
+        <section class="education">
+            <h2><a id="Education">Education</a></h2>
+            <p>I have an incomplete higher education in history, which helped me to understand that I'm not a humanitarian :) At the moment I'm taking courses on front-end from RS-school.</p>
+        </section>
+        <section class="english">
+            <h2><a id="English">English</a></h2>
+            <p>English is at A2 level, but I try to improve my level with the help of online courses.</p>
+        </section>
+     </article>
+ </main>
+ <footer>
+     <h3><a id="Contact_Info">Contact Info</a></h3>
+     <ul>
+         <li>phone: <a href="tel:+375259010985">+375(25)9010985</a></li>
+         <li>mail: <a href="mailto:emilia.blek@yandex.ru">emilia.blek@yandex.ru</a></li>
+     </ul>
+ </footer>   
+</body>
+</html>
